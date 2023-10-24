@@ -1,0 +1,36 @@
+// Use a loop to combine the lists into a single list of tuples
+state_names =["Arizona","Arizona","California","California","Louisiana"]
+county_names =["Apache","Navajo","Sacramento", "Santa Cruz","East Baton Rouge"]
+print(state_names)
+print(county_names)
+state_county_tuples = []
+for i in range(len(state_names)):
+    state_county_tuples.append((state_names[i], county_names[i]))
+state_county_tuples
+
+// zip function
+
+state_names =["Arizona","Arizona","California","California","Louisiana"]
+county_names =["Apache","Navajo","Sacramento", "Santa Cruz","East Baton Rouge"]
+print(state_names)
+print(county_names)
+state_county_tuples = []
+for i in range(len(state_names)):
+    state_county_tuples.append((state_names[i], county_names[i]))
+
+state_county_tuples
+
+state_county_zipped = list(zip(state_names, county_names))
+
+state_county_zipped
+state_names =["Arizona","Arizona","California","California","Louisiana"]
+county_names =["Apache","Navajo","Sacramento", "Santa Cruz","East Baton Rouge"]
+state_county_tuples = []
+for i in range(len(state_names)):
+    state_county_tuples.append((state_names[i], county_names[i]))
+state_county_tuples
+ca_counties = []
+for state, county in state_county_tuples:
+    if state=='Arizona':
+        ca_counties.append(county)
+ca_counties
